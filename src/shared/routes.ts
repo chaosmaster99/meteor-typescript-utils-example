@@ -6,9 +6,9 @@ module sampleapp.router {
         layoutTemplate: "Layout"
     });
 
-    Router.route("Main", { name: "/", controller: "MainController" });
+    Router.route("/", { name: "MainTemplate", controller: "MainController" });
 
     export interface ISingleClickRouteParams { clickId: string; }
     Router.route("SingleClick", { path: "/click/:clickId", controller: "SingleClickController" });
-    
+
 }
